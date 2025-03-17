@@ -1,0 +1,65 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "category": "custom"
+    },
+    "type": "REST",
+    "lang": {
+        "fr-FR": {
+            "name": "Mon Activité Personnalisée",
+            "description": "Description de mon activité personnalisée"
+        },
+        "en-US": {
+            "name": "My Custom Activity",
+            "description": "Description of my custom activity"
+        }
+    },
+    "arguments": {
+        "execute": {
+            "inArguments": [
+                { "emailAddress": "{{Contact.Attribute.CustomDE.EmailAddress}}" }
+            ],
+            "outArguments": [],
+            "url": "https://votre-app.herokuapp.com/activity/execute",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+        "save": {
+            "url": "https://votre-app.herokuapp.com/activity/save",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "validate": {
+            "url": "https://votre-app.herokuapp.com/activity/validate",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "publish": {
+            "url": "https://votre-app.herokuapp.com/activity/publish",
+            "verb": "POST",
+            "useJwt": true
+        }
+    },
+    "userInterfaces": {
+        "configModal": {
+            "height": 400,
+            "width": 600,
+            "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}

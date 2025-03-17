@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Custom Activity</title>
+    <script type="text/javascript" src="js/postmonger.js"></script>
+    <script type="text/javascript">
+        // Client ID de votre package installé
+        var clientId = "YOUR_CLIENT_ID";
+    </script>
+    <script type="text/javascript" src="js/customActivity.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .step {
+            display: none;
+        }
+        #step1 {
+            display: block;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="step1" class="step">
+        <h2>Configuration de l'activité personnalisée</h2>
+        <form>
+            <div>
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+            </div>
+            <button type="button" id="nextBtn">Suivant</button>
+        </form>
+    </div>
+    
+    <div id="step2" class="step">
+        <h2>Confirmation</h2>
+        <p>Vérifiez vos paramètres:</p>
+        <div id="summaryMessage"></div>
+        <button type="button" id="backBtn">Retour</button>
+        <button type="button" id="saveBtn">Enregistrer</button>
+    </div>
+</body>
+</html>
