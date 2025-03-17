@@ -7,7 +7,7 @@
     "type": "REST",
     "lang": {
         "fr-FR": {
-            "name": "Mon Activité Personnalisée",
+            "name": "Test Omar",
             "description": "Description de mon activité personnalisée"
         },
         "en-US": {
@@ -21,7 +21,7 @@
                 { "emailAddress": "{{Contact.Attribute.CustomDE.EmailAddress}}" }
             ],
             "outArguments": [],
-            "url": "https://votre-app.herokuapp.com/activity/execute",
+            "url": "https://customactivitymc-c2b51e36971d.herokuapp.com/activity/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -32,17 +32,17 @@
     },
     "configurationArguments": {
         "save": {
-            "url": "https://votre-app.herokuapp.com/activity/save",
+            "url": "https://customactivitymc-c2b51e36971d.herokuapp.com/activity/save",
             "verb": "POST",
             "useJwt": true
         },
         "validate": {
-            "url": "https://votre-app.herokuapp.com/activity/validate",
+            "url": "https://customactivitymc-c2b51e36971d.herokuapp.com/activity/validate",
             "verb": "POST",
             "useJwt": true
         },
         "publish": {
-            "url": "https://votre-app.herokuapp.com/activity/publish",
+            "url": "https://customactivitymc-c2b51e36971d.herokuapp.com/activity/publish",
             "verb": "POST",
             "useJwt": true
         }
